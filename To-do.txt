@@ -2,4 +2,6 @@ Improve explainability of code and process
 Explore training of autoencoder -> Use cropped images, obtain from ssh
 
 Optimize mask, think further
-Import patient data
+Import test data
+Import patient data -> suma de sumes per calcular threshold pacients
+Mirar si l'autoencoderlite optimitza en segons quins casos
