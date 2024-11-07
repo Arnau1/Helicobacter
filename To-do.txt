@@ -1,6 +1,5 @@
-Use cropped images, obtain from ssh
-When enough data, prepare train/test positive/negative patients
 Improve explainability of code and process
-Explore training of autoencoder
+Explore training of autoencoder -> Use cropped images, obtain from ssh
 
 Optimize mask, think further
+Import patient data
