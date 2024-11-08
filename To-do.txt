@@ -6,3 +6,9 @@ Import test data
 
 Cross-validation, roc curve -> threshold (patch i pacient)
 autoencoder u-net / no u-net? / comptar pixels
+
+
+
+
+pacient: %patches +- i gloabl n pixels
+buscar classifier dels thresholds
