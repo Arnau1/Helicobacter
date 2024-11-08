@@ -3,5 +3,6 @@ Explore training of autoencoder -> Use cropped images, obtain from ssh
 
 Optimize mask, think further
 Import test data
-Import patient data -> suma de sumes per calcular threshold pacients
-Mirar si l'autoencoderlite optimitza en segons quins casos
+
+Cross-validation, roc curve -> threshold (patch i pacient)
+autoencoder u-net / no u-net? / comptar pixels
