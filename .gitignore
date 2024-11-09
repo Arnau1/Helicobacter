@@ -1,4 +1,10 @@
+patients.pkl
+
 Raw_Train_Set/
+Raw_Test_set/
+
 Training_Set/
-HoldOut/
-images.pkl
+Test_Set/
+
+train_imgs.pkl
+test_imgs.pkl
