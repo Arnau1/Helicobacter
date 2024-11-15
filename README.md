@@ -21,7 +21,7 @@ Results are measured for patch and patient classification. In patch classificati
 #### Patient classification
 ![image](https://github.com/user-attachments/assets/0a7522c0-92b1-4d9d-bb4a-c002b8799dfa)
 
-The over-classification of patients as not infected on unseen data may be due to the sparsity of infected patches on raw data.
+
 ##### For further information read the report
 
 ### References
