@@ -16,17 +16,10 @@ The main assumption behind the approach used is that when bacteria are present p
 ### Results
 Results are measured for patch and patient classification. In patch classification, only a test set is classified, since no more labelled data was available. On patient classification, a test set and a chunk of raw unseen data are classified. 
 #### Patch classification
-![image](https://github.com/user-attachments/assets/9f50ae49-dc2b-477f-8d31-0e92751f25da)
+![image](https://github.com/user-attachments/assets/ecf8e59b-afa2-4393-8bf9-75a697901bf5)
+
 #### Patient classification
-Test set
-
-
-![image](https://github.com/user-attachments/assets/fbfa93f7-aff3-4fbe-ace3-f91555a3f8b0)
-
-Unseen data
-
-
-![image](https://github.com/user-attachments/assets/fa339748-95b1-4e20-93f9-ca9f7f2bde54)
+![image](https://github.com/user-attachments/assets/0a7522c0-92b1-4d9d-bb4a-c002b8799dfa)
 
 The over-classification of patients as not infected on unseen data may be due to the sparsity of infected patches on raw data.
 ##### For further information read the report
