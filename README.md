@@ -7,8 +7,10 @@ The aim is to be capable of detecting whether a patient has or not the bacteria 
 
 The main assumption behind the approach used is that when bacteria are present patches have more red pixels. However, simply counting pixels does not yield good results. Detection through an autoencoder trained so that it is capable of replicating the structure of patches but not red color is a more effective approach.
 
-![image](https://github.com/user-attachments/assets/696161cb-cfce-40e0-a98c-6c67e2a0b30c)
-![image](https://github.com/user-attachments/assets/90adbc5d-bce8-4228-b4a3-3f9e1f1f6163)
+
+![Example1](https://github.com/user-attachments/assets/f190ba3e-ea70-4ecb-b466-d46aa209230f)
+![Example2](https://github.com/user-attachments/assets/4f6ca58e-a552-4037-a7d8-21608942ecb7)
+
 
 
 ### Results
