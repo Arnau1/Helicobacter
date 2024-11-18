@@ -13,7 +13,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classifica
 def explore_estimators(X, y, estimators, voting='hard'):
     """
     Evaluates multiple classifiers using cross-validation and displays confusion matrices and reports.
-    Additionally, it creates a hard voting classifier with the estimators passed.
+    Additionally, it creates a hard or soft (depending on parameter `voting`) voting classifier with the estimators passed.
     """        
     names = ['Sane', 'Infected']
 
@@ -22,7 +22,7 @@ def explore_estimators(X, y, estimators, voting='hard'):
 
     # Evaluate each estimator
     for name, estimator in all_estimators:
-        predictions = cross_val_predict(estimator, X, y, cv=5)  # Cross-validated predictions
+        predictions = cross_val_predict(estimator, X, y, cv=5)  # Cross-validated predictions. 5 folds
         
         # Display confusion matrix
         print(f'CLASSIFIER USED: {name}')
@@ -41,7 +41,7 @@ def explore_estimators(X, y, estimators, voting='hard'):
 def inference_pass(patient_data, X, y, metadata, estimator, train=False, patch_level=False):
     """
     Performs inference with a given estimator and saves those inferences to the patient_data dictionary.
-    `metadata` is used to keep track of the origin of the patches.
+    `metadata` is used to keep track of the origin of the patches or patients.
     If `train=True` the estimator is fitted and the function returns a trained model.
     If `patch_level` is set to `True`, the function works at the patch-level. Otherwise, it works at the patient-level.
     """

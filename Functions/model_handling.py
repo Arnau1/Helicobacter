@@ -7,11 +7,12 @@ import cv2
 import matplotlib.pyplot as plt
 
 
+
 class ConvAutoencoder(nn.Module):
     """
     This class defines the model used for reconstructing images. 
     It is a simple autoencoder structure enhanced by a U-Net-style skip connection that bypasses the most inner layer. 
-    This skip connection helps retain spatial details during reconstruction.
+    This skip connection helps retain spatial details during reconstruction, since we only care about colour.
     """
     def __init__(self):
         super(ConvAutoencoder, self).__init__()
@@ -164,7 +165,8 @@ def visualize(dataloader, model, patient_data, num_images=3, mode='simple', labe
 
                     # Display
                     titles = ['Original', 'HSV Space', 'Red Pixels', 'Reconstructed', 'HSV Space', 'Red Pixels']
-                    images = [original, hsv_original, red_pixels_original, reconstructed, hsv_reconstructed, red_pixels_reconstructed]
+                    images = [original, hsv_original, red_pixels_original, 
+                              reconstructed, hsv_reconstructed, red_pixels_reconstructed]
                     fig, axs = plt.subplots(2, 3, figsize=(12, 8))
                     for ax, img, title in zip(axs.flatten(), images, titles):
                         ax.imshow(img)
@@ -179,6 +181,9 @@ def visualize(dataloader, model, patient_data, num_images=3, mode='simple', labe
 
 # Helper function for `patch_features`
 def process_img(image, lower_red, upper_red):
+    """
+    Function to count the number of red pixels within a given image.
+    """
     # Convert image to HSV
     hsv_image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2HSV)
 

@@ -98,10 +98,10 @@ def extract_data(source_folder, patients, split=None, annotated=False, data=None
                 # No labels on patches
                 entry = {'img_path': src_path, 'label': None}
 
-            # Append the path entry to this patient's data
+            # Append the path entry to this patch's data
             patient_entries.append(entry)
 
-        # Step 7: Add the patient label and image paths to the patient data
+        # Step 7: Add the patient label and patches information to the patient data
         patient_data[patient] = {
             'images': patient_entries,
             'patient_label': patient_label
@@ -182,7 +182,7 @@ def add_patient_features(patient_data):
     Based on the patch features, this function creates four features for each patient:
         - Total Red Pixel Count: The aggregated number of red pixels in all the patient's patches.
         - Total Pixel Difference: The aggregated absolute difference in the number of red.
-        - Total Percentage Difference: The aggregated percentage difference in red pixels.
+        - Mean Percentage Difference: The aggregated percentage difference in red pixels.
         - Percentage of positive patches: The relative amount of positive patches that the patient has.
     """
     for _, entry in patient_data.items():
