@@ -27,10 +27,5 @@ Results are measured for patch and patient classification. In patch classificati
 
 [1] Cano, P. et al. (2023) Diagnosis of helicobacter pylori using autoencoders for the detection of anomalous staining patterns in immunohistochemistry images, arXiv.org. Available at: https://arxiv.org/abs/2309.16053 (Accessed: 10 November 2024).
 
-[2] https://stackoverflow.com/
-
-[3] https://chatgpt.com/
-
-
 Mustapha El Aichouni (1668936), Arnau Solé (1630311), Josep Bonet (1633723) and Jordi Longaron (1630483)
 
