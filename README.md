@@ -32,5 +32,5 @@ Results are measured for patch and patient classification. In patch classificati
 [3] https://chatgpt.com/
 
 
-Mustapha El Aichouni (1668936), Arnau Solé Porta (1630311), Josep Bonet Saez (1633723) and Jordi Longaron (1630483)
+Mustapha El Aichouni (1668936), Arnau Solé (1630311), Josep Bonet (1633723) and Jordi Longaron (1630483)
 
