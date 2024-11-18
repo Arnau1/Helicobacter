@@ -8,13 +8,12 @@ The aim is to be capable of detecting whether a patient has or not the bacteria 
 The main assumption behind the approach used is that when bacteria are present patches have more red pixels. However, simply counting pixels does not yield good results. Detection through an autoencoder trained so that it is capable of replicating the structure of patches but not red color is a more effective approach.
 
 
-![Example1](https://github.com/user-attachments/assets/f190ba3e-ea70-4ecb-b466-d46aa209230f)
 ![Example2](https://github.com/user-attachments/assets/4f6ca58e-a552-4037-a7d8-21608942ecb7)
 
 
 
 ### Results
-Results are measured for patch and patient classification. In patch classification, only a test set is classified, since no more labelled data was available. On patient classification, a test set and a chunk of raw unseen data are classified. 
+Results are measured for patch and patient classification. In patch classification, only a small labelled set is classified, since no more labelled data was available. On patient classification, a chunk of raw unseen data is classified. 
 #### Patch classification
 ![image](https://github.com/user-attachments/assets/ecf8e59b-afa2-4393-8bf9-75a697901bf5)
 
@@ -26,14 +25,11 @@ Results are measured for patch and patient classification. In patch classificati
 
 ### References
 
-[1] Ronneberger, O., Fischer, P. and Brox, T. (2015) U-Net: Convolutional Networks for Biomedical Image Segmentation, arXiv.org. Available at: https://arxiv.org/abs/1505.04597 (Accessed: 10 November 2024).
+[1] Cano, P. et al. (2023) Diagnosis of helicobacter pylori using autoencoders for the detection of anomalous staining patterns in immunohistochemistry images, arXiv.org. Available at: https://arxiv.org/abs/2309.16053 (Accessed: 10 November 2024).
 
-[2] Cano, P. et al. (2023) Diagnosis of helicobacter pylori using autoencoders for the detection of anomalous staining patterns in immunohistochemistry images, arXiv.org. Available at: https://arxiv.org/abs/2309.16053 (Accessed: 10 November 2024).
+[2] https://stackoverflow.com/
 
-[3] https://stackoverflow.com/
-
-[4] https://chatgpt.com/
-
+[3] https://chatgpt.com/
 
 
 Mustapha El Aichouni (1668936), Arnau Solé Porta (1630311), Josep Bonet Saez (1633723) and Jordi Longaron (1630483)
